@@ -2,6 +2,15 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"/>
+    <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)"/>
+    <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs">
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
@@ -24,6 +33,9 @@
 </head>
 
 <body>
+<aside>
+      <dark-mode-toggle id="dark-mode-toggle" legend="Theme Switcher" light="Light" dark="Dark" appearance="switch" permanent="false"></dark-mode-toggle>
+    </aside>
 	<div class="wrapper">
 		<div class="thin-bar">
 		</div>
